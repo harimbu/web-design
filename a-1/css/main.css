@@ -23,12 +23,11 @@ body {
     margin: 0 auto;
 }
 
-.header {
-    height: 100px;
+.header {    
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #ddd;
+    align-items: center;  
+    border-bottom: 1px solid #002765;  
 }
 
 .header .logo {
@@ -41,6 +40,83 @@ body {
 }
 
 .nav li a {
-    background-color: red;
-    padding: 30px;
+    display: block;      
+    height: 100px;
+    padding: 0 40px;
+    line-height: 100px;
+}
+
+.nav li a:hover {
+    color: orangered;
+}
+
+/* contents */
+.contents {
+    display: flex;
+    height: 200px;
+    padding: 10px 0;
+    gap: 24px;
+}
+
+.tab {
+    flex: 1;
+}
+
+.tab_title {
+    height: 51px;
+    display: flex;    
+    gap: 4px;
+    border-bottom: 3px solid #ff6448;
+}
+
+.tab_title h3 {
+    flex: 1;
+    background-color: #ff6448;
+    /* text-align: center;
+    line-height: 50px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.tab_title h3.dimm {
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.tab_contents {
+    padding: 10px;
+}
+
+.tab_contents li a {
+    display: block;
+    padding: 4px 0;
+}
+
+.tab_contents li a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    flex: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.links {
+    background-color: #ddd;
+    flex: 1;
+}
+
+/* footer */
+.footer {
+    background-color: #ccc;
+    height: 100px;
 }
