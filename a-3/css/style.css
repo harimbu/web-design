@@ -200,11 +200,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 }
 
 .f_menu a {
+    display: block;
     font-weight: bold;
+    padding: 0 25px;
+    border-right: 1px solid #999;
+}
+
+.f_menu li:last-child a {
+    border-right: none;
 }
 
 .f_menu a:hover {
