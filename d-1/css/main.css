@@ -61,12 +61,11 @@ body {
     position: absolute;
     top: 0;
     left: 190px;
-    opacity: 0;
-    transition: all 0.3s;    
+    display: none;
 }
 
 .gnb.on::after {
-    opacity: 1;
+    display: block;
 }
 
 .sub {
